@@ -1,12 +1,21 @@
 from flask import jsonify
-from flask_restful import Resource, Api
+from flask_restful import (
+    Api,
+    Resource,
+)
 
-from .models import Player as PlayerModel, to_dict
+from .models import (
+    to_dict,
+    Tweet as TweetModel,
+)
+
 
 api = Api()
 
-class Player(Resource):
-    def get(self):
-        return jsonify([to_dict(player) for player in PlayerModel.query.all()])
 
-api.add_resource(Player, '/')
+class Tweet(Resource):
+    def get(self):
+        return jsonify([to_dict(tweet) for tweet in TweetModel.query.all()])
+
+
+api.add_resource(Tweet, '/')

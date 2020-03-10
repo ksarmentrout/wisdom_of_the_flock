@@ -1,3 +1,3 @@
-CREATE TABLE players ( firstname VARCHAR(100) NOT NULL, lastname VARCHAR(100) NOT NULL );
-
-INSERT INTO players VALUES ('james', 'lebron');
+CREATE DATABASE qseek;
+CREATE USER qseek_user;
+GRANT ALL PRIVILEGES ON DATABASE qseek TO qseek_user;

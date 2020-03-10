@@ -3,15 +3,20 @@ import json
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.ext.declarative import DeclarativeMeta
 
+
 db = SQLAlchemy()
 
-class Player(db.Model):
-    __tablename__ = 'players'
-    firstname = db.Column(db.String(100), nullable=False, primary_key=True)
-    lastname = db.Column(db.String(100), nullable=False)
+
+class Tweet(db.Model):
+    __tablename__ = 'tweet'
+    id = db.Column(db.Integer, primary_key=True)
+    tweet_text = db.Column(db.String(280), nullable=False)
+    permalink_slug = db.Column(db.String(10), nullable=True)
+    location = db.Column(db.String, nullable=True)
 
     def __repr__(self):
-        return '<Player %r>' % self.firstname + ' ' + self.lastname
+        return '<Tweet: %r>' % self.tweet_text
+
 
 def to_dict(obj):
     if isinstance(obj.__class__, DeclarativeMeta):

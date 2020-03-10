@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { CONFIG } from './config.js';
 
@@ -7,24 +7,24 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-        players: []
+        tweets: []
     };
   }
 
   componentDidMount() {
     fetch(CONFIG.API_BASE_URL)
         .then(results => results.json())
-        .then(players => this.setState({players: players}));
+        .then(tweets => this.setState({tweets: tweets}));
   }
 
   render() {
-    const players = this.state.players.map((player, index) => <li key={index}>{player.lastname} {player.firstname}</li>);
+    const tweets = this.state.tweets.map((tweet, index) => <li key={index}>{tweet.tweet_text}</li>);
 
     return (
       <div>
-          <h1>Players list</h1>
+          <h1>Tweet list</h1>
           <ul>
-            {players}
+            {tweets}
           </ul>
       </div>
     );
