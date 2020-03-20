@@ -15,6 +15,9 @@ api = Api()
 
 
 class Tweet(Resource):
+    '''
+    Fetches all tweets.
+    '''
     def get(self):
         return jsonify([to_dict(tweet) for tweet in TweetModel.query.all()])
 
@@ -31,6 +34,15 @@ class RandomTweets(Resource):
         return jsonify([to_dict(tweet) for tweet in tweets])
 
 
+class PermalinkTweet(Resource):
+    '''
+    Fetches on the tweet that has a permalink slug matching the URL input.
+    '''
+    def get(self, permalink_slug):
+        tweets = TweetModel.query.filter_by(permalink_slug=permalink_slug).all()
+        return jsonify([to_dict(tweet) for tweet in tweets])
+
+
 # class OptimizedRandomTweets(Resource):
 #     def get(self):
 #         tweets = TweetModel.query.options(load_only('id')).offset(
@@ -44,4 +56,5 @@ class RandomTweets(Resource):
 
 api.add_resource(Tweet, '/')
 api.add_resource(RandomTweets, '/random')
+api.add_resource(PermalinkTweet, '/<string:permalink_slug>')
 # api.add_resource(OptimizedRandomTweets, '/optimized_random')
