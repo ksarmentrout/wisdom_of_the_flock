@@ -1,9 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import { CONFIG } from './config.js';
+import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
 
-class App extends Component {
+function DisplayTweet(props) {
+    return (
+        <h1 id={'main_tweet'}>{props.tweet_text}</h1>
+    );
+}
+
+class App extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -11,22 +19,25 @@ class App extends Component {
     };
   }
 
+  getNewTweet() {
+      fetch(CONFIG.API_RAND_URL)
+          .then(results => results.json())
+          .then(all_tweets => this.setState({tweets: all_tweets}));
+  }
+
   componentDidMount() {
-    fetch(CONFIG.API_BASE_URL)
-        .then(results => results.json())
-        .then(tweets => this.setState({tweets: tweets}));
+      this.getNewTweet()
   }
 
   render() {
-    const tweets = this.state.tweets.map((tweet, index) => <li key={index}>{tweet.tweet_text}</li>);
-
     return (
-      <div>
-          <h1>Tweet list</h1>
-          <ul>
-            {tweets}
-          </ul>
-      </div>
+      <Container>
+          <Container>
+              <h1 className={'intro'}>Tweet list</h1>
+          </Container>
+          <DisplayTweet tweet_text={this.state.tweets.slice(0, 1).map(t => t.tweet_text)}/>
+          <Button onClick={() => this.getNewTweet()}>New Tweet</Button>
+      </Container>
     );
   }
 }
