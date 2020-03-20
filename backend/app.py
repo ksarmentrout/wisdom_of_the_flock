@@ -1,9 +1,9 @@
 from flask import Flask
 from flask_cors import CORS
 
-from api.api import api
-from api.models import db
-from api.config import Config
+from backend.api.api import api
+from backend.api.models import db
+from backend.api.config import Config
 
 
 def register_extensions(app):

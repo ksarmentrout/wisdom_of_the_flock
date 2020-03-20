@@ -12,7 +12,7 @@ class Tweet(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     tweet_text = db.Column(db.String(280), nullable=False)
     permalink_slug = db.Column(db.String(10), nullable=True)
-    location = db.Column(db.String, nullable=True)
+    location = db.Column(db.String(255), nullable=True)
 
     def __repr__(self):
         return '<Tweet: %r>' % self.tweet_text
