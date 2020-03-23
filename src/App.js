@@ -1,6 +1,7 @@
 import React from 'react';
 import { CONFIG } from './config.js';
 import './App.css';
+import Error from './Error'
 import MainPage from './MainPage'
 
 
@@ -10,6 +11,8 @@ class App extends React.Component {
     this.state = {
         tweets: [],
         loading: true,
+        fetchError: false,
+        errorMessage: null,
     };
   }
 
@@ -18,12 +21,22 @@ class App extends React.Component {
       this.getRandomTweet()
   }
 
+  handleErrors(error) {
+      console.log(error);
+      this.setState({
+          loading: false,
+          fetchError: true,
+          errorMessage: error.message,
+      });
+  }
+
   getRandomTweet() {
       // This is separate so the button always fetches a random tweet
       fetch(CONFIG.API_RAND_URL)
           .then(results => results.json())
           .then(all_tweets => this.setState({tweets: all_tweets}))
-          .then(() => this.setState({loading: false}));
+          .then(() => this.setState({loading: false}))
+          .catch((error) => this.handleErrors(error));
   }
 
   componentDidMount() {
@@ -33,6 +46,11 @@ class App extends React.Component {
   render() {
       if (this.state.loading) {
           return null;
+      }
+      else if (this.state.fetchError) {
+          return (
+              <Error errorMsg={this.state.errorMessage}/>
+          );
       }
       else {
           let first_tweet = this.state.tweets.slice(0, 1);
