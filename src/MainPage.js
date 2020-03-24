@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
-import { CONFIG } from './config.js';
 
 
 function DisplayTweet(props) {
@@ -20,7 +19,7 @@ function MainPage(props) {
             <DisplayTweet tweet_text={props.tweet_text}/>
             <Button onClick={props.buttonOnClick}>New Tweet</Button>
             <p className={'permalink'}>
-                Permalink: {CONFIG.API_TWEET_URL.concat(props.permalink_slug)}
+                Permalink: {'https://wisdomoftheflock.com/tweet/'.concat(props.permalink_slug)}
             </p>
         </Container>
         )
