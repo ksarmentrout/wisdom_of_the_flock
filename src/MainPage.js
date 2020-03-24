@@ -15,7 +15,7 @@ function MainPage(props) {
     return (
         <Container>
             <Container>
-                <h1 className={'intro'}>Tweet list</h1>
+                <h2 className={'intro'}>Someone asked:</h2>
             </Container>
             <DisplayTweet tweet_text={props.tweet_text}/>
             <Button onClick={props.buttonOnClick}>New Tweet</Button>
