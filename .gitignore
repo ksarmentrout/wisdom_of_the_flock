@@ -102,3 +102,5 @@ backend/venv
 backend/api/__pycache__
 client/build/
 
+# build folder
+build/
