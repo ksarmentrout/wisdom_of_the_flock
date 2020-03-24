@@ -25,6 +25,9 @@ jobs:
       - name: Remake CNAME
         run: echo "wisdomoftheflock.com" > build/CNAME
 
+      - name: Make .env
+        run: echo "REACT_APP_BASE_URL='${{ secrets.REACT_APP_BASE_URL }}'" > build/.env
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
