@@ -2,7 +2,7 @@
   "name": "wisdomoftheflock",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://wisdomoftheflock.com",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "dotenv": "^8.2.0",
