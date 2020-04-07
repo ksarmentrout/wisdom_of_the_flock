@@ -39,6 +39,11 @@ class App extends React.Component {
           .catch((error) => this.handleErrors(error));
   }
 
+  getTweetAndResetButton() {
+      this.getRandomTweet();
+      document.querySelector('#permalink_button').innerText = 'Copy Permalink';
+  }
+
   componentDidMount() {
       this.getTweet()
   }
@@ -60,7 +65,7 @@ class App extends React.Component {
               <MainPage
                   tweet_text={tweet_text}
                   permalink_slug={permalink_slug}
-                  buttonOnClick={() => this.getRandomTweet()}
+                  buttonOnClick={() => this.getTweetAndResetButton()}
               />
           );
       }

@@ -1,0 +1,48 @@
+.MainPage {
+  text-align: center;
+  position: relative;
+}
+
+.tweet_holder {
+  /*width: 70%;*/
+  margin: 5rem;
+  text-align: center;
+  position: relative;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid black;
+  text-align: right;
+  position: relative;
+  font-family: 'Dosis';
+  font-weight: 300;
+}
+
+.header .site_name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.link {
+  display: inline-block;
+  /*padding: 15px 0;*/
+  margin: 15px 25px;
+  position: relative;
+  text-decoration: none;
+  color: #0f0f0f;
+  font-size: 24px;
+  transition: all 100ms;
+}
+
+.link:hover {
+  /*opacity: .7;*/
+  color: #888888;
+  transition: all 100ms;
+}
