@@ -40,7 +40,7 @@ function MainPage(props) {
                     </div>
                 </div>
                 <div className="menu">
-                    <div className="header_text">
+                    <div className="fake_about">
                         About
                     </div>
                     {/*<a href="#" className="link">*/}
