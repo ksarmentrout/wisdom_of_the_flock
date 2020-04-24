@@ -35,14 +35,17 @@ function MainPage(props) {
         <div>
             <div className="header">
                 <div className="site_name">
-                    <div className="real_deal">
+                    <div className="header_text">
                         Wisdom of the Flock
                     </div>
                 </div>
                 <div className="menu">
-                    <a href="#" className="link">
-                        <div className="link_title">About</div>
-                    </a>
+                    <div className="header_text">
+                        About
+                    </div>
+                    {/*<a href="#" className="link">*/}
+                        {/*<div className="link_title">About</div>*/}
+                    {/*</a>*/}
                 </div>
             </div>
             <div className="MainPage flexbox-container">
