@@ -23,7 +23,6 @@ class PermalinkApp extends App {
 
     getTweet() {
       // Overloads App.getTweet so that on pageload the specific permalink tweet is fetched
-      console.log(this.props);
       let { params } = this.props.match;
       let endpoint = CONFIG.API_TWEET_URL.concat('/').concat(params.permalink);
 
