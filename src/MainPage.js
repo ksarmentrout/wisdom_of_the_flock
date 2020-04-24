@@ -1,13 +1,11 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
 import './MainPage.css';
 
 
 function DisplayTweet(props) {
     return (
-        <Typography variant="h2" id={'main_tweet'}>{props.tweet_text}</Typography>
+        <p id={'main_tweet'}>{props.tweet_text}</p>
     );
 }
 
@@ -37,7 +35,9 @@ function MainPage(props) {
         <div>
             <div className="header">
                 <div className="site_name">
-                    Wisdom of the Flock
+                    <div className="real_deal">
+                        Wisdom of the Flock
+                    </div>
                 </div>
                 <div className="menu">
                     <a href="#" className="link">
@@ -45,17 +45,17 @@ function MainPage(props) {
                     </a>
                 </div>
             </div>
-            <Container className="MainPage">
+            <div className="MainPage flexbox-container">
                 <div className="tweet_holder">
                     <DisplayTweet tweet_text={props.tweet_text}/>
                 </div>
-                <div>
+                <div className="buttons">
                     <Button
                         onClick={props.buttonOnClick}
-                        id="new_question+button"
+                        id="new_question_button"
                     >New Question</Button>
                 </div>
-                <div>
+                <div className="buttons">
                     <Button
                         id="permalink_button"
                         onClick={() => copyToClipboard(
@@ -63,7 +63,7 @@ function MainPage(props) {
                         )}
                     >Copy Permalink</Button>
                 </div>
-            </Container>
+            </div>
         </div>
         )
 }

@@ -1,24 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;600;700&display=swap');
+
+body {
+  /*background-color: seashell;*/
+  /*background-color: darkgray;*/
+  background-color: #ccc;
+}
+
 .MainPage {
   text-align: center;
-  position: relative;
+  flex-direction: column;
+  justify-content: center;
 }
+
 
 .tweet_holder {
-  /*width: 70%;*/
-  margin: 5rem;
+  overflow: hidden;
   text-align: center;
-  position: relative;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+
+#main_tweet {
+  font-family: 'Martel', serif;
+  font-weight: 400;
+}
 
 .header {
   width: 100%;
-  border-bottom: 1px solid black;
+  /*border-bottom: 1px solid gainsboro;*/
   text-align: right;
   position: relative;
-  font-family: 'Dosis';
+  font-family: 'Dosis', sans-serif;
   font-weight: 300;
+}
+
+.header .real_deal {
+  border-bottom: 1px solid gainsboro;
 }
 
 .header .site_name {
@@ -28,6 +48,10 @@
   font-size: 32px;
   font-weight: 100;
   padding: 10px;
+}
+
+.header .link {
+  border-bottom: 1px solid gainsboro;
 }
 
 .link {
@@ -45,4 +69,97 @@
   /*opacity: .7;*/
   color: #888888;
   transition: all 100ms;
+}
+
+.buttons #new_question_button {
+  font-family: 'Dosis', serif !important;
+  text-transform: lowercase !important;
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+
+.buttons #permalink_button {
+  font-family: 'Dosis', serif !important;
+  text-transform: lowercase !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  color: #555 !important;
+}
+
+/* Mobile */
+@media only screen and (max-device-width: 480px) {
+  .tweet_holder {
+    height: 250px;
+    margin-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .tweet_holder {
+    color: black;
+    height: 300px;
+    margin-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .tweet_holder {
+    color: black;
+    height: 325px;
+    margin-top: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    font-size: 1.9rem;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .tweet_holder {
+    color: black;
+    height: 350px;
+    margin-top: 5rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    font-size: 2.2rem;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .tweet_holder {
+    color: black;
+    height: 450px;
+    margin-top: 6rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
+    font-size: 2.6rem;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .tweet_holder {
+    color: black;
+    height: 450px;
+    margin-top: 6rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    font-size: 2.6rem;
+  }
+
 }
