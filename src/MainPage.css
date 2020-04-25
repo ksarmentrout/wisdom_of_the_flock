@@ -4,22 +4,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;600;700&display=swap');
 
-body {
+html, body {
   /*background-color: seashell;*/
   /*background-color: darkgray;*/
   background-color: #ccc;
+  height: 100%;
+  overflow: hidden;
 }
 
+#root {
+  height: 100%;
+}
+
+
 .MainPage {
+    height: 100%;
+}
+
+.content {
   text-align: center;
-  flex-direction: column;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 
 .tweet_holder {
-  overflow: hidden;
+  /*overflow: auto;*/
   text-align: center;
+  flex: 1;
+  min-height: auto;
 }
 
 
@@ -68,7 +83,6 @@ body {
   display: inline-block;
   /*padding: 15px 0;*/
   margin: 15px 25px;
-  position: relative;
   text-decoration: none;
   color: #0f0f0f;
   font-size: 24px;
@@ -79,6 +93,12 @@ body {
   /*opacity: .7;*/
   color: #888888;
   transition: all 100ms;
+}
+
+.button_container {
+  margin-bottom: 5rem;
+  flex: 0 1 150px;
+  min-height: 100px;
 }
 
 .buttons #new_question_button {
@@ -96,24 +116,13 @@ body {
   color: #555 !important;
 }
 
-/* Mobile */
-@media only screen and (max-device-width: 480px) {
-  .tweet_holder {
-    height: 250px;
-    margin-top: 3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .tweet_holder {
-    color: black;
-    height: 300px;
-    margin-top: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin-top: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     font-size: 1.8rem;
   }
 }
@@ -122,8 +131,6 @@ body {
 @media only screen and (min-width: 600px) {
 
   .tweet_holder {
-    color: black;
-    height: 325px;
     margin-top: 3rem;
     padding-left: 6rem;
     padding-right: 6rem;
@@ -136,8 +143,6 @@ body {
 @media only screen and (min-width: 768px) {
 
   .tweet_holder {
-    color: black;
-    height: 350px;
     margin-top: 5rem;
     padding-left: 9rem;
     padding-right: 9rem;
@@ -150,8 +155,6 @@ body {
 @media only screen and (min-width: 992px) {
 
   .tweet_holder {
-    color: black;
-    height: 450px;
     margin-top: 6rem;
     padding-left: 11rem;
     padding-right: 11rem;
@@ -164,8 +167,6 @@ body {
 @media only screen and (min-width: 1200px) {
 
   .tweet_holder {
-    color: black;
-    height: 450px;
     margin-top: 6rem;
     padding-left: 15rem;
     padding-right: 15rem;

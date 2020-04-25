@@ -32,7 +32,7 @@ const copyToClipboard = str => {
 
 function MainPage(props) {
     return (
-        <div>
+        <div className="MainPage">
             <div className="header">
                 <div className="site_name">
                     <div className="header_text">
@@ -48,23 +48,25 @@ function MainPage(props) {
                     {/*</a>*/}
                 </div>
             </div>
-            <div className="MainPage flexbox-container">
+            <div className="content">
                 <div className="tweet_holder">
                     <DisplayTweet tweet_text={props.tweet_text}/>
                 </div>
-                <div className="buttons">
-                    <Button
-                        onClick={props.buttonOnClick}
-                        id="new_question_button"
-                    >New Question</Button>
-                </div>
-                <div className="buttons">
-                    <Button
-                        id="permalink_button"
-                        onClick={() => copyToClipboard(
-                            'https://wisdomoftheflock.com/tweet/'.concat(props.permalink_slug)
-                        )}
-                    >Copy Permalink</Button>
+                <div className="button_container flex-container">
+                    <div className="buttons">
+                        <Button
+                            onClick={props.buttonOnClick}
+                            id="new_question_button"
+                        >New Question</Button>
+                    </div>
+                    <div className="buttons">
+                        <Button
+                            id="permalink_button"
+                            onClick={() => copyToClipboard(
+                                'https://wisdomoftheflock.com/tweet/'.concat(props.permalink_slug)
+                            )}
+                        >Copy Permalink</Button>
+                    </div>
                 </div>
             </div>
         </div>
