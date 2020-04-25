@@ -14,13 +14,11 @@ import registerServiceWorker from './registerServiceWorker';
 
 const routing = (
   <Router>
-    <div>
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/tweet/:permalink" component={PermalinkApp} />
         <Route component={Err404} />
       </Switch>
-    </div>
   </Router>
 );
 
