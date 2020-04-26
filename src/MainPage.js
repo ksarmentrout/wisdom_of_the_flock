@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import Button from '@material-ui/core/Button';
 import './MainPage.css';
 
@@ -40,12 +41,9 @@ function MainPage(props) {
                     </div>
                 </div>
                 <div className="menu">
-                    <div className="fake_about">
+                    <Link to="/about" className="link">
                         About
-                    </div>
-                    {/*<a href="#" className="link">*/}
-                        {/*<div className="link_title">About</div>*/}
-                    {/*</a>*/}
+                    </Link>
                 </div>
             </div>
             <div className="content">

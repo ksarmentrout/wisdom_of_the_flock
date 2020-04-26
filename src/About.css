@@ -65,17 +65,28 @@ html, body {
   padding: 10px;
 }
 
+.header .fake_about {
+  border-bottom: 1px solid gainsboro;
+  display: inline-block;
+  margin: 15px 25px;
+  position: relative;
+  text-decoration: none;
+  font-size: 24px;
+  transition: all 100ms;
+}
+
 .header .link {
   border-bottom: 1px solid gainsboro;
 }
 
 .link {
   display: inline-block;
+  /*padding: 15px 0;*/
   margin: 15px 25px;
+  text-decoration: none;
   color: #0f0f0f;
   font-size: 24px;
   transition: all 100ms;
-  position: relative;
 }
 
 .link:hover {
