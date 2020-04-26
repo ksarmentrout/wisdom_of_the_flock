@@ -104,3 +104,7 @@ client/build/
 
 # build folder
 build/
+
+# extra favicons
+favicons/
+
