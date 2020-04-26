@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import './Header.css';
 
 
 function Header() {
     return (
         <div className="header">
             <div className="site_name">
-                <div className="header_text">
+                <Link to="/" className="link">
                     Wisdom of the Flock
-                </div>
+                </Link>
             </div>
             <div className="menu">
                 <Link to="/about" className="link">

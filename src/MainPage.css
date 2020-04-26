@@ -4,19 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;600;700&display=swap');
 
-html, body {
-  /*background-color: seashell;*/
-  /*background-color: darkgray;*/
-  background-color: #ccc;
-  height: 100%;
-  overflow: hidden;
-}
-
-#root {
-  height: 100%;
-}
-
-
 .MainPage {
     height: 100%;
 }
@@ -41,47 +28,6 @@ html, body {
 #main_tweet {
   font-family: 'Martel', serif;
   font-weight: 400;
-}
-
-.header {
-  width: 100%;
-  /*border-bottom: 1px solid gainsboro;*/
-  text-align: right;
-  position: relative;
-  font-family: 'Dosis', sans-serif;
-  font-weight: 300;
-}
-
-.header .header_text {
-  border-bottom: 1px solid gainsboro;
-}
-
-.header .site_name {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 32px;
-  font-weight: 100;
-  padding: 10px;
-}
-
-.header .link {
-  border-bottom: 1px solid gainsboro;
-}
-
-.link {
-  display: inline-block;
-  margin: 15px 25px;
-  color: #0f0f0f;
-  font-size: 24px;
-  transition: all 100ms;
-  position: relative;
-}
-
-.link:hover {
-  /*opacity: .7;*/
-  color: #888888;
-  transition: all 100ms;
 }
 
 .button_container {
