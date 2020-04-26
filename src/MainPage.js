@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import Button from '@material-ui/core/Button';
 import './MainPage.css';
+import Header from './Header.js'
 
 
 function DisplayTweet(props) {
@@ -34,18 +34,7 @@ const copyToClipboard = str => {
 function MainPage(props) {
     return (
         <div className="MainPage">
-            <div className="header">
-                <div className="site_name">
-                    <div className="header_text">
-                        Wisdom of the Flock
-                    </div>
-                </div>
-                <div className="menu">
-                    <Link to="/about" className="link">
-                        About
-                    </Link>
-                </div>
-            </div>
+            <Header/>
             <div className="content">
                 <div className="tweet_holder">
                     <DisplayTweet tweet_text={props.tweet_text}/>
