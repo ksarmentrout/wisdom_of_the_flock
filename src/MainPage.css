@@ -1,11 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;600;700&display=swap');
-
 .MainPage {
     height: 100%;
+    overflow: hidden;
 }
 
 .content {
@@ -55,9 +50,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .tweet_holder {
-    margin-top: 3rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    margin: 3rem 1.5rem 0;
     font-size: 1.8rem;
   }
 }
@@ -66,9 +59,7 @@
 @media only screen and (min-width: 600px) {
 
   .tweet_holder {
-    margin-top: 3rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    margin: 3rem 5rem 0;
     font-size: 1.9rem;
   }
 
@@ -78,9 +69,7 @@
 @media only screen and (min-width: 768px) {
 
   .tweet_holder {
-    margin-top: 5rem;
-    padding-left: 9rem;
-    padding-right: 9rem;
+    margin: 5rem 8rem 0;
     font-size: 2.2rem;
   }
 
@@ -90,9 +79,7 @@
 @media only screen and (min-width: 992px) {
 
   .tweet_holder {
-    margin-top: 6rem;
-    padding-left: 11rem;
-    padding-right: 11rem;
+    margin: 6rem 10rem 0;
     font-size: 2.6rem;
   }
 
@@ -102,9 +89,7 @@
 @media only screen and (min-width: 1200px) {
 
   .tweet_holder {
-    margin-top: 6rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    margin: 6rem 13rem 0;
     font-size: 2.6rem;
   }
 
