@@ -1,9 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;600;700&display=swap');
+
+
 html, body {
   /*background-color: seashell;*/
   /*background-color: darkgray;*/
   background-color: #ccc;
   height: 100%;
-  overflow: hidden;
 }
 
 #root {
