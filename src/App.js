@@ -13,6 +13,7 @@ class App extends React.Component {
         loading: true,
         fetchError: false,
         errorMessage: null,
+        tweetBatchCounter: 1,
     };
   }
 
@@ -32,11 +33,22 @@ class App extends React.Component {
 
   getRandomTweet() {
       // This is separate so the button always fetches a random tweet
-      fetch(CONFIG.API_RAND_URL)
-          .then(results => results.json())
-          .then(all_tweets => this.setState({tweets: all_tweets}))
-          .then(() => this.setState({loading: false}))
-          .catch((error) => this.handleErrors(error));
+
+      // Fetch tweets in batches - only get more if there are none or if the counter has gone through all existing.
+      if (this.state.tweets.length === 0 || this.state.tweetBatchCounter === this.state.tweets.length) {
+          // Reset counter
+          this.setState({tweetBatchCounter: 1});
+          fetch(CONFIG.API_RAND_URL)
+              .then(results => results.json())
+              .then(all_tweets => this.setState({tweets: all_tweets}))
+              .then(() => this.setState({loading: false}))
+              .catch((error) => this.handleErrors(error));
+      }
+      else {
+          // Increment the counter if it hasn't reached the end of the list.
+          // This reduces GET requests and ensures no duplicates within the first batch size
+          this.setState({tweetBatchCounter: this.state.tweetBatchCounter + 1});
+      }
   }
 
   getTweetAndResetButton() {
@@ -58,7 +70,7 @@ class App extends React.Component {
           );
       }
       else {
-          let first_tweet = this.state.tweets.slice(0, 1);
+          let first_tweet = this.state.tweets.slice(this.state.tweetBatchCounter - 1, this.state.tweetBatchCounter);
           let tweet_text = first_tweet.map(t => t.tweet_text);
           let permalink_slug = first_tweet.map(t => t.permalink_slug);
           return (
