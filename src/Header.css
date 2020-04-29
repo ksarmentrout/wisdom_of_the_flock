@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+
+.header {
+  width: 100%;
+  text-align: right;
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+}
+
+.header .site_name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  font-weight: 100;
+  padding: 10px;
+  margin-left: 5px;
+  background-color: #ccc;
+}
+
+.header .menu {
+  margin: 15px 15px;
+  display: inline-block;
+  font-size: 24px;
+}
+
+.link {
+  color: #0f0f0f;
+  transition: all 100ms;
+  border-bottom: 1px solid gainsboro;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #888888;
+  transition: all 100ms;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

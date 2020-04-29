@@ -1,24 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;600;700&display=swap');
-
-html, body {
-  /*background-color: seashell;*/
-  /*background-color: darkgray;*/
-  background-color: #ccc;
-  height: 100%;
-  overflow: hidden;
-}
-
-#root {
-  height: 100%;
-}
-
-
 .MainPage {
     height: 100%;
+    overflow: hidden;
 }
 
 .content {
@@ -41,58 +23,6 @@ html, body {
 #main_tweet {
   font-family: 'Martel', serif;
   font-weight: 400;
-}
-
-.header {
-  width: 100%;
-  /*border-bottom: 1px solid gainsboro;*/
-  text-align: right;
-  position: relative;
-  font-family: 'Dosis', sans-serif;
-  font-weight: 300;
-}
-
-.header .header_text {
-  border-bottom: 1px solid gainsboro;
-}
-
-.header .site_name {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 32px;
-  font-weight: 100;
-  padding: 10px;
-}
-
-.header .fake_about {
-  border-bottom: 1px solid gainsboro;
-  display: inline-block;
-  margin: 15px 25px;
-  position: relative;
-  text-decoration: none;
-  font-size: 24px;
-  transition: all 100ms;
-}
-
-.header .link {
-  border-bottom: 1px solid gainsboro;
-}
-
-.link {
-  display: inline-block;
-  /*padding: 15px 0;*/
-  margin: 15px 25px;
-  text-decoration: none;
-  color: #0f0f0f;
-  font-size: 24px;
-  transition: all 100ms;
-}
-
-.link:hover {
-  /*opacity: .7;*/
-  color: #888888;
-  transition: all 100ms;
 }
 
 .button_container {
@@ -120,9 +50,7 @@ html, body {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .tweet_holder {
-    margin-top: 3rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    margin: 3rem 1.5rem 0;
     font-size: 1.8rem;
   }
 }
@@ -131,9 +59,7 @@ html, body {
 @media only screen and (min-width: 600px) {
 
   .tweet_holder {
-    margin-top: 3rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    margin: 3rem 5rem 0;
     font-size: 1.9rem;
   }
 
@@ -143,9 +69,7 @@ html, body {
 @media only screen and (min-width: 768px) {
 
   .tweet_holder {
-    margin-top: 5rem;
-    padding-left: 9rem;
-    padding-right: 9rem;
+    margin: 5rem 8rem 0;
     font-size: 2.2rem;
   }
 
@@ -155,9 +79,7 @@ html, body {
 @media only screen and (min-width: 992px) {
 
   .tweet_holder {
-    margin-top: 6rem;
-    padding-left: 11rem;
-    padding-right: 11rem;
+    margin: 6rem 10rem 0;
     font-size: 2.6rem;
   }
 
@@ -167,9 +89,7 @@ html, body {
 @media only screen and (min-width: 1200px) {
 
   .tweet_holder {
-    margin-top: 6rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    margin: 6rem 13rem 0;
     font-size: 2.6rem;
   }
 

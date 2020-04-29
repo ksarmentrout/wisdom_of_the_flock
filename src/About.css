@@ -1,0 +1,61 @@
+.AboutPage {
+    height: 100%;
+}
+
+.about_content {
+  text-align: center;
+  font-family: 'Martel', serif;
+  overflow: auto;
+  min-height: auto;
+}
+
+.about_content p {
+  text-align: left;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .about_content {
+    margin: 1rem 3rem 3rem;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .about_content {
+    margin: 1rem 6rem 3rem;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .about_content {
+    margin: 1rem 11rem 3rem;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .about_content {
+    margin: 1rem 16rem 3rem;
+  }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .about_content {
+    margin: 1rem 19rem 3rem;
+  }
+
+}
