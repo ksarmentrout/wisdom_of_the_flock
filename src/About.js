@@ -28,9 +28,6 @@ class About extends App {
                         <p>
     Nullam consequat vitae massa sed interdum. Mauris dapibus metus id orci malesuada imperdiet. Ut nibh ipsum, varius quis rhoncus ac, scelerisque vitae eros. Morbi euismod erat in scelerisque porttitor. Suspendisse urna nunc, porttitor eu blandit quis, sollicitudin et enim. Phasellus vitae arcu efficitur, commodo justo sit amet, iaculis augue. Aliquam interdum porttitor quam, sed vulputate nunc varius sed. Duis congue lacinia libero, sed ultrices magna lobortis a.
                         </p>
-                        <p>
-    Etiam pulvinar in enim ac euismod. Proin gravida neque vel ipsum semper, id bibendum lacus lacinia. Phasellus fringilla, urna non rhoncus aliquam, quam nisi porttitor sapien, vel hendrerit mauris risus sed nisi. Morbi faucibus tempor mollis. Fusce commodo ex sed sapien convallis, a ornare mi venenatis. In justo leo, tempus pretium dui non, consequat tincidunt ante. Pellentesque at elementum urna. Pellentesque ultricies nisi augue, sed sagittis eros feugiat non. Praesent euismod sed ipsum luctus pharetra. Morbi eget nunc in enim facilisis aliquam. Donec eget feugiat nisi.
-                        </p>
                     </div>
                 </div>
             )

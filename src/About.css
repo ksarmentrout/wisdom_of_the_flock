@@ -18,7 +18,7 @@
 @media only screen and (max-width: 600px) {
 
   .about_content {
-    margin: 1rem 2rem 3rem;
+    margin: 1rem 3rem 3rem;
   }
 
 }
@@ -27,7 +27,7 @@
 @media only screen and (min-width: 600px) {
 
   .about_content {
-    margin: 1rem 5rem 3rem;
+    margin: 1rem 6rem 3rem;
   }
 
 }
@@ -36,7 +36,7 @@
 @media only screen and (min-width: 768px) {
 
   .about_content {
-    margin: 1rem 7rem 3rem;
+    margin: 1rem 11rem 3rem;
   }
 
 }
@@ -45,7 +45,7 @@
 @media only screen and (min-width: 992px) {
 
   .about_content {
-    margin: 1rem 9rem 3rem;
+    margin: 1rem 16rem 3rem;
   }
 
 
@@ -55,7 +55,7 @@
 @media only screen and (min-width: 1200px) {
 
   .about_content {
-    margin: 1rem 11rem 3rem;
+    margin: 1rem 19rem 3rem;
   }
 
 }
