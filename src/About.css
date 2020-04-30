@@ -13,6 +13,18 @@
   text-align: left;
 }
 
+.about_refs {
+  font-size: smaller;
+}
+
+.about_link {
+  text-decoration: none;
+  color: black;
+}
+
+.ref_section {
+  /*color: #555;*/
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
