@@ -17,30 +17,35 @@ class About extends App {
                     <div className="about_content">
                         <h1 id="about_title">About</h1>
                         <p>
-                            Wisdom of the Flock investigates how people use their Twitter audience as a collective
-                            intelligence to answer primarily moral questions.
+                        Wisdom of the Flock is a curated collection of tweets posted over February-May 2020 that each 
+                        ask what "should" or "must" be. The collection as a whole investigates how people use their 
+                        Twitter audience as a collective intelligence to answer primarily moral questions.
                         </p>
                         <p>
-                            Over February-April 2020, tweets posing "should" and "must" questions to the general public
-                            were collected, of which a subset was curated for inclusion here. Questions using this
-                            language ask how the world ought to be and what actions are morally permissible, reaching
-                            for some authority to provide the answer. By displaying some of them here, Wisdom of the
-                            Flock looks at the types of questions that people trust the public to respond to as that
-                            authority.
+                        Questions using this language ask how the world ought to be and what actions are morally permissible, 
+                        reaching for some authority to provide the answer. By displaying some of them here, Wisdom of the Flock 
+                        looks at the types of questions that people trust the public to respond to as that authority.
                         </p>
                         <p>
-                            This project began in 2019 but was completed in 2020 in the midst of a global pandemic.
-                            This backdrop of uncertainty, anxiety, sorrow, and restlessness is reflected in the full
-                            corpus of collected tweets and provides crucial context for considering the types of
-                            questions being asked.
+                        Each of the tweets here is self-contained: text-only, not part of a thread or a direct reply, 
+                        and not requiring other types of media or links for context. 
                         </p>
                         <p>
-                            The questions here range from lighthearted to rhetorical to deeply sincere, together
-                            displaying the range of answers we seek from other people.
+                        This project began in 2019 but was completed in 2020 in the midst of a global pandemic. 
+                        This backdrop of uncertainty, anxiety, sorrow, and restlessness is reflected in the full corpus of 
+                        tweets and provides important context for looking at the scope of what is asked.
                         </p>
                         <p>
-                            More information, including links to the full corpus of collected tweets, will be
-                            available soon.
+                        The questions here vary from lighthearted to rhetorical to deeply sincere, together displaying 
+                        the range of answers and guidance we seek from other people. 
+                        </p>
+                        <p>
+                        More information, including links to both the full corpus of collected tweets and the curated 
+                        subset on display, can be found here (link).
+                        </p>
+                        <p>
+                        If you recognize a tweet here as your own and would like it to be either credited or removed, 
+                        please contact me.
                         </p>
                         <p className='ref_section'>
                             Created by <a href="https://ksarmentrout.com" className='about_link'>
