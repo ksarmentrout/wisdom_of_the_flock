@@ -27,10 +27,6 @@ class About extends App {
                         looks at the types of questions that people trust the public to respond to as that authority.
                         </p>
                         <p>
-                        Each of the tweets here is self-contained: text-only, not part of a thread or a direct reply, 
-                        and not requiring other types of media or links for context. 
-                        </p>
-                        <p>
                         This project began in 2019 but was completed in 2020 in the midst of a global pandemic. 
                         This backdrop of uncertainty, anxiety, sorrow, and restlessness is reflected in the full corpus of 
                         tweets and provides important context for looking at the scope of what is asked.
@@ -41,16 +37,13 @@ class About extends App {
                         </p>
                         <p>
                         More information, including links to both the full corpus of collected tweets and the curated 
-                        subset on display, can be found here (link).
-                        </p>
-                        <p>
-                        If you recognize a tweet here as your own and would like it to be either credited or removed, 
-                        please contact me.
+                        subset on display, can be found here (link). If you recognize a tweet here as your own and would 
+                        like it to be either credited or removed, please contact me.
                         </p>
                         <p className='ref_section'>
                             Created by <a href="https://ksarmentrout.com" className='about_link'>
                                 Keaton Armentrout
-                            </a>.<br/>
+                            </a><br/>
                             <a href="https://twitter.com/keaton_sa" className='about_link about_refs'>
                                 @keaton_sa
                             </a><br/>
