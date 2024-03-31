@@ -27,12 +27,12 @@ class About extends App {
                         looks at the types of questions people trust the public to respond to as that authority.
                         </p>
                         <p>
-                        This project began in 2019 but was completed in 2020 in the midst of a confluence of public health 
-                        and social justice crises. This backdrop of uncertainty, anxiety, sorrow, anger, and restlessness is 
-                        reflected in the full corpus of tweets and provides important context for the scope of what is asked.
+                        This project began in 2019 but was completed in 2020 in the midst of public health and social justice crises. 
+                        This backdrop of uncertainty, anxiety, sorrow, and restlessness is reflected in the full corpus of 
+                        tweets and provides important context for the scope of what is asked.
                         </p>
                         <p>
-                        The questions here vary from lighthearted to rhetorical to deeply sincere, together displaying 
+                        The questions here vary from lighthearted to rhetorical to deeply sincere, displaying 
                         the range of answers and guidance we seek from other people. 
                         </p>
                         <p>
